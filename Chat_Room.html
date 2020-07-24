@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Chatroom</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" type="images/png" href="images/icon.png">
+
+
+
+
+
+
+
+
+  <style>
+    
+#nav{
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+i{
+  color: rgb(0,120,215);
+}
+
+  #content{
+      background-color: rgb(242,242,242);
+      border-radius: 10px;
+      width: 80%;
+     margin: auto;
+     padding: 10px;
+     
+    }
+
+
+    tr, td {
+      max-width: 15px;
+      
+    }
+
+    
+
+    td {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    td:hover {
+      overflow: visible;
+    }
+
+    img {
+      width: 100%;
+
+    }
+
+    
+  </style>
+
+
+
+
+
+
+
+  <script src="javascript.js"></script>
+
+
+</head>
+
+<body>
+
+  
+
+
+  <div id="nav">
+      <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="index.html"><i class="fa fa-skype"></i> <i class="fa fa-comments"></i> Skype Chat</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Page Language
+                  </a>
+                  <div class="dropdown-menu w-50" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Portuguese</a>
+        
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+  </div>
+
+
+ <div id="content">
+     <div class="row " >
+         
+         <div class="col-sm-12" id="firsth">
+            <div class="container ml-3 my-2 ">
+
+
+                <div class="row ">
+            
+                  <div class="col">
+                    <h5 class="my-3">Enter Your Details</h5>
+                  </div>
+            
+                  <div class="w-100"></div>
+            
+                  <div class="col">
+                    <label for="nick">Nick</label>
+                    <input id="nick" type="text" class="form-control w-50" required>
+                  </div>
+            
+            
+                  <div class="col"> <label for="skype">Skype Id</label>
+                    <input id="skype" type="text" class="form-control w-50" required></div>
+            
+                  <div class="w-100"></div>
+            
+            
+                  <div class="col"><label for="level">Level</label>
+                    <br>
+                    <select id="level" class="custom-select w-50" required>
+            
+                      <option></option>
+                      <option>Beginner</option>
+                      <option>Intermediate</option>
+                      <option>Upper Intermediate</option>
+                      <option>Advance</option>
+                    </select></div>
+            
+            
+                  <div class="col"> <label for="gender">Gender</label>
+                    <br>
+                    <select id="gender" class="custom-select w-50" required>
+            
+                      <option></option>
+                      <option>Male</option>
+                      <option>Female</option>
+            
+                    </select></div>
+            
+                  <div class="w-100"></div>
+            
+                  <div class="col my-3">
+                    <button style="font-size: smaller;" class="btn btn-primary" type="submit" onclick="oncall()">Add Me</button>
+                  </div>
+                </div>
+              </div>         
+         
+        </div>
+
+     </div>
+ </div>
+
+
+  
+
+
+  <div class=" container-fluid mt-5">
+    <div class="row">
+      <div class="col-12 ">
+
+        <table id="total_list" class=" table table-hover table-striped table-dark table-responsive-sm "
+          style="font-size: smaller; height: 245px;">
+          <thead>
+            <tr>
+              <th scope="col">S No.</th>
+              <th scope="col">Nick</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Level</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!--
+            <tr>
+              <td>1</th>
+              <td >Aditya</td>
+              <td >Male</td>
+              <td >Advance</td>
+              <td >adityadigant</td>
+              <td > </td>
+            </tr>
+          -->
+
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
